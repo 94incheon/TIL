@@ -180,7 +180,8 @@
     - cmd 에서 `ngrok http 5000` 이라고 입력하여 실행 ( cmd 는 ngrok 서버 열음 )
       - git bash 는 나의 서버를 돌릴 예정
       - `https://61260667.ngrok.io` ngrok 프록시서버
-    - ![image-20200122173926752](C:\Users\multicampus\Desktop\미래의 TIL\04_Learning_챗봇SW3일차.assets\image-20200122173926752.png)
+    - ![image-20200124130900392](C:\Users\kjaeg\TIL\img\image-20200124130900392.png)
+    - 
     - 
     - setWebhook 을 설정하게되면, getUpdates 는 멈춘다. ( 챗봇이 알아서 공지를 주기 때문에 )
     - 

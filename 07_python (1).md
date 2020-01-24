@@ -10,12 +10,11 @@
 
 - 개요
 
-  - ![image-20200122173613289](C:\Users\multicampus\Desktop\미래의 TIL\07_python (1).assets\image-20200122173613289.png)
-  - 
+  - ![image-20200124131028294](C:\Users\kjaeg\TIL\img\image-20200124131028294.png)
   - 이렇게 버전관리가 안되기 때문에 git 을 사용함
   
-
   
+
   - SCM : 소스 코드 매니지먼트 (what)
   - VCS : 버전 컨트롤 시스템 (how)
 
@@ -171,8 +170,9 @@ $ git push origin master
 
 - 순서
 
-  - ![image-20200122173659944](C:\Users\multicampus\Desktop\미래의 TIL\07_python (1).assets\image-20200122173659944.png)
-  - 
+  - ![image-20200124131139691](C:\Users\kjaeg\TIL\img\image-20200124131139691.png)
+
+    
 
 - 홈 디렉토리 가기
 
@@ -206,8 +206,7 @@ ___
      - fork 한뒤에 `git clone [가져온주소]` 으로 내 로컬저장소로 가져옴
   2. `git bash` 에서 해당 코드를 수정하고 내 원격저장소에 다시 `push` 해서 올린다.
   3. `github` 홈페이지에서 `pull requests` 을 눌러서 동주쌤에게 반영해달라고 요청한다.
-- ![image-20200122173720816](C:\Users\multicampus\Desktop\미래의 TIL\07_python (1).assets\image-20200122173720816.png)
-- 
+- ![image-20200124131212098](C:\Users\kjaeg\TIL\img\image-20200124131212098.png)
 
 
 

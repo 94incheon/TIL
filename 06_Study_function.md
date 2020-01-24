@@ -46,10 +46,10 @@
            print("{0}: {1}, {2}".format(type(obj), *obj))
        ```
 
-       ![image-20200122174151952](C:\Users\multicampus\Desktop\미래의 TIL\06_Study_function.assets\image-20200122174151952.png)
+       ![image-20200124130747183](C:\Users\kjaeg\TIL\img\image-20200124130747183.png)
 
        
-    
+   
        
 
    - filter()
@@ -58,20 +58,21 @@
 
    - list(), tuple(), set(), dict()
 
-     - ![image-20200122174222513](C:\Users\multicampus\Desktop\미래의 TIL\06_Study_function.assets\image-20200122174222513.png)
+     - ![image-20200124130807849](C:\Users\kjaeg\TIL\img\image-20200124130807849.png)
+     - 
   - 
    
 - map()
-   
+  
 - max(), min()
-   
+  
    - range()
 
      - range(1, 10, 1)
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
    
 - sorted() : 오름차순
-   
+  
    - reversed() : 내림차순
    
    - zip()
@@ -91,8 +92,8 @@
 4. 객체 조사를 위한 함수
    - dir() : 인자로 전달된 객체가 가지고 있는 변수, 메서드와 같은
      			**속성 정보를 리스트 객체로 반환**
-       			인자를 전달하지 않고 호출하면
-       			현재 **지역 스코프에대한 정보를 리스트 객체로 반환**
+           			인자를 전달하지 않고 호출하면
+           			현재 **지역 스코프에대한 정보를 리스트 객체로 반환**
    - globals() : 현재의 전역 심볼 테이블을 보여주는
      		             딕셔너리를 반환하는 함수
    - locals() : 현재의 지역 심볼 테이블을 보여주는

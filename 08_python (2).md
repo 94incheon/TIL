@@ -176,7 +176,7 @@ $ cp ~/master_python/02.~~ .    # master_python 폴더내에 02.~~ 파일을 . �
 
 ## 스코프
 
-![](C:\Users\multicampus\Desktop\미래의 TIL\09_python (2).assets\image-20200121142933411.png)
+![image-20200124131350543](C:\Users\kjaeg\TIL\img\image-20200124131350543.png)
 
 
 
