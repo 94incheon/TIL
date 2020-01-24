@@ -46,7 +46,7 @@
            print("{0}: {1}, {2}".format(type(obj), *obj))
        ```
 
-       ![image-20200124130747183](C:\Users\kjaeg\TIL\img\image-20200124130747183.png)
+       ![image-20200124130747183](img/image-20200124130747183.png)
 
        
    
@@ -58,7 +58,7 @@
 
    - list(), tuple(), set(), dict()
 
-     - ![image-20200124130807849](C:\Users\kjaeg\TIL\img\image-20200124130807849.png)
+     - ![image-20200124130807849](./img/image-20200124130807849.png)
      - 
   - 
    
