@@ -10,7 +10,7 @@
 
 - 개요
 
-  - ![image-20200124131028294](C:\Users\kjaeg\TIL\img\image-20200124131028294.png)
+  - ![image-20200124131028294](img/image-20200124131028294.png)
   - 이렇게 버전관리가 안되기 때문에 git 을 사용함
   
   
@@ -170,7 +170,7 @@ $ git push origin master
 
 - 순서
 
-  - ![image-20200124131139691](C:\Users\kjaeg\TIL\img\image-20200124131139691.png)
+  - ![image-20200124131139691](img/image-20200124131139691.png)
 
     
 
@@ -206,7 +206,7 @@ ___
      - fork 한뒤에 `git clone [가져온주소]` 으로 내 로컬저장소로 가져옴
   2. `git bash` 에서 해당 코드를 수정하고 내 원격저장소에 다시 `push` 해서 올린다.
   3. `github` 홈페이지에서 `pull requests` 을 눌러서 동주쌤에게 반영해달라고 요청한다.
-- ![image-20200124131212098](C:\Users\kjaeg\TIL\img\image-20200124131212098.png)
+- ![image-20200124131212098](img/image-20200124131212098.png)
 
 
 
