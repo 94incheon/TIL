@@ -84,11 +84,8 @@ $ git push origin master
 
 - 로컬에 이미파일을 저장한 경우 절대 경로가 아닌 상대 경로를 사용하여 이미지를 저장합니다.
 
-  <div>
-    <img src="https://images.velog.io/post-images/nakta/8bfae650-0614-11ea-b43d-199dcf8e87f3/git.png" style="zoom: 25%;" />
-    <img src="https://t1.daumcdn.net/cfile/tistory/99DE2A3B5B14D05423" />
-  </div>
-  
+
+<img src="https://images.velog.io/post-images/nakta/8bfae650-0614-11ea-b43d-199dcf8e87f3/git.png" style="zoom: 25%;" />
 
 ![](https://t1.daumcdn.net/cfile/tistory/99DE2A3B5B14D05423)
 
