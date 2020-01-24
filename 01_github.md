@@ -141,3 +141,13 @@ $ git commit -m "학습 내용 추가"
 $ git push origin master
 ```
 
+
+
+### (3) Git bash 한글 깨짐 문제 수정
+
+___
+
+```shell
+$ git config --global core.quotepath false
+```
+
