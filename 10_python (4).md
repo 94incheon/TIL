@@ -136,23 +136,7 @@ print(cylinder.__doc__)
 
 ___
 
-![image-20200124131605196](C:\Users\kjaeg\TIL\img\image-20200124131605196.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image-20200124131605196](./img/image-20200124131605196.png)
 
 
 
