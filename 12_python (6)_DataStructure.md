@@ -73,6 +73,8 @@ def lcm(a, b):
 
 2. Optimal substruction
 
+![image-20200129183011788](img/image-20200129183011788.png)
+
 
 
 ` 재귀적 구현 ` 이 가능한가..?
@@ -174,7 +176,19 @@ factorial(3)
 
 
 
+___
 
+### 하노이의 탑 알고리즘.. ( 재귀함수 )
 
 [하노이 탑 알고리즘](https://ko.khanacademy.org/computing/computer-science/algorithms/towers-of-hanoi/a/towers-of-hanoi)
+
+___
+
+
+
+![image-20200129182049054](img/image-20200129182049054.png)
+
+![image-20200129182134226](img/image-20200129182134226.png)
+
+
 
