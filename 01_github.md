@@ -151,3 +151,15 @@ ___
 $ git config --global core.quotepath false
 ```
 
+
+
+
+
+### (4) git clone
+
+___
+
+```shell
+$ git clone [복사한 주소]
+```
+
