@@ -175,3 +175,161 @@ ___
 https://parksb.github.io/article/28.html
 ```
 
+
+
+
+
+### (6) Github 공동 작업 방법
+
+___
+
+john		A
+
+재구		B
+
+john		C
+
+재구		D
+
+1. 다른 폴더 건드리지 않는다.
+2. 나는 작업을 `master` 에서 진행하지 않는다. (Master x)
+3. 본인만의 `branch` 을 만들고 거기에서만 코드 작업을 한다.
+4. 그것들을 한곳에 모아서 `Merge request` 깃랩에서.. 깃허브에서는 `pull request` 
+5. `merge` 한다.
+
+![image-20200205114427893](img/image-20200205114427893.png)
+
+
+
+
+
+
+
+
+
+1.  ```shell
+   $ git init
+    ```
+
+   => master 가 생성됨
+
+   
+
+2. ```shell
+   $ git branch
+   ```
+
+   => 현재 브랜치 목록 나옴
+
+   
+
+3. ```shell
+   $ git branch [브랜치이름]
+   ```
+
+   => 브랜치 만듬
+
+   
+
+4. ```shell
+   $ git switch [브랜치이름]
+   $ git checkout [브랜치이름]
+   ```
+
+   => 해당브랜치 로 이동한다. ( 여기서 작업한다 이제부터 ) 마스터에서 커밋 ㄴㄴ
+
+   
+
+5. ```shell
+   $ git branch -d [브랜치이름]
+   ```
+
+   => branch 지우기
+
+![image-20200205115359864](img/image-20200205115359864.png)
+
+
+
+
+
+> 브랜치(jaegu)에서 작업하고... master 에다가 합친다.... 
+>
+> 이 과정을 `merging` 이라고 한다.
+>
+> **merging 전에 무조건 `master` 로 이동한 후에 합쳐야 한다.**
+
+```shell
+$ git merge [병합할 브랜치의 이름] (master)
+```
+
+### Branch => 1회용
+
+
+
+- Branch 를 만들면서 이동
+
+```shell
+$ git switch -c [브랜치이름]
+$ git checkout -b [브랜치이름]
+```
+
+=> 브랜치를 만들면서 이동하는 것. ( 만들고 스위치 기능 동시에 함 )
+
+
+
+- 로그 상태 확인하기
+
+```shell
+$ git log --oneline
+```
+
+
+
+- Vim 명령어..
+
+```
+:wq   저장하고 빠져나간다.
+```
+
+
+
+
+
+
+
+## Git merge 종류
+
+- **FF - Merge** ( fast forward )   =>   HEAD
+  - 혼자 작업할때 자주 쓰이게 될 것
+
+- **Auto - Merge** 
+  - 개별 브랜치의 작업들이 충돌하지 않을때, ( git ) 이 자동으로 해줌.
+  - commit 을 새롭게 하나 쌓는다...
+  - 
+- **Conflict Merge**
+  - 가장 안좋은 상황
+  - 동일한 파일을 건드렸을 때.
+  - 두 개 합쳤을때 두가지 진실이 있을때는 우리에게 선택하라고 한다...
+  - `git commit -m "Resolve conflicts"` 를 남겨주는 편
+
+
+
+
+
+
+
+## Git Flow ( git 순서 )
+
+![image-20200205131758806](img/image-20200205131758806.png)
+
+
+
+
+
+- ```shell
+  $ git log --oneline --graph
+  ```
+
+  => 그래프 상태보기
+
+- 
