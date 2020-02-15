@@ -293,6 +293,12 @@ $ git log --oneline
 
 
 
+- Merge 하기전에 push 한다. ( 깃랩에 merge request 보낸다.... )
+
+```shell
+$ git push origin jaegu (jaegu)
+```
+
 
 
 
@@ -332,6 +338,10 @@ $ git log --oneline
 
   => 그래프 상태보기
 
+<<<<<<< HEAD
+=======
+- 
+>>>>>>> 07236f63b84a5405dd72c89a437614c5a7d3b4b3
 
 
 
@@ -339,6 +349,7 @@ $ git log --oneline
 
 
 
+<<<<<<< HEAD
 #### - Commit 커밋 날짜 변경
 
 ```shell
@@ -352,3 +363,12 @@ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
 ```
 
 - 변경된 시간으로 새로운 커밋을 작성하는것
+=======
+## 공동 작업 순서
+
+1. `merge` 된 `master` 를 `pull` 이후에는 본인 `branch` 삭제 후, 재생성
+2. 본인의 `branch` 에서 코드 작업 할 것 ( jaegu 에서 commit 하기 )
+3. `master` 에 `Commit` 하지말 것
+4. 항상 작업 시작전에 본인의 `branch` 확인하기 (jaegu)
+5. 위의 작업들 반복
+>>>>>>> 07236f63b84a5405dd72c89a437614c5a7d3b4b3
