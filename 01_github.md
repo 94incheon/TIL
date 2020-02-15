@@ -338,18 +338,12 @@ $ git push origin jaegu (jaegu)
 
   => 그래프 상태보기
 
-<<<<<<< HEAD
-=======
-- 
->>>>>>> 07236f63b84a5405dd72c89a437614c5a7d3b4b3
 
 
 
 
 
 
-
-<<<<<<< HEAD
 #### - Commit 커밋 날짜 변경
 
 ```shell
@@ -363,7 +357,11 @@ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
 ```
 
 - 변경된 시간으로 새로운 커밋을 작성하는것
-=======
+
+
+
+
+
 ## 공동 작업 순서
 
 1. `merge` 된 `master` 를 `pull` 이후에는 본인 `branch` 삭제 후, 재생성
@@ -371,4 +369,3 @@ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
 3. `master` 에 `Commit` 하지말 것
 4. 항상 작업 시작전에 본인의 `branch` 확인하기 (jaegu)
 5. 위의 작업들 반복
->>>>>>> 07236f63b84a5405dd72c89a437614c5a7d3b4b3
