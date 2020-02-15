@@ -209,7 +209,7 @@ john		C
 
 1.  ```shell
    $ git init
-    ```
+   ```
 
    => master 가 생성됨
 
@@ -332,4 +332,23 @@ $ git log --oneline
 
   => 그래프 상태보기
 
-- 
+
+
+
+
+
+
+
+#### - Commit 커밋 날짜 변경
+
+```shell
+git commit --amend --no-edit --date "Mon 20 Aug 2018 20:19:19 KST"
+```
+
+
+
+```shell
+GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend	
+```
+
+- 변경된 시간으로 새로운 커밋을 작성하는것
