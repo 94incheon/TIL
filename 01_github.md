@@ -347,8 +347,12 @@ $ git push origin jaegu (jaegu)
 #### - Commit 커밋 날짜 변경
 
 ```shell
-git commit --amend --no-edit --date "Mon 20 Aug 2018 20:19:19 KST"
+git commit --amend --no-edit --date "Mon 20 Feb 2020 19:17:19 KST"
 ```
+
+- 마지막 커밋날짜를 임의의 날짜로 변경
+
+
 
 
 
