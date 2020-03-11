@@ -21,3 +21,21 @@ arr = [3, 6, 7, 1, 5, 4]
 
 ![9A04CBE9-8EEC-4CE1-BBC0-56B53A6F3271](img/9A04CBE9-8EEC-4CE1-BBC0-56B53A6F3271.png)
 
+
+
+
+
+#### 파이썬으로 부분집합 만드는방법 ( 비트오퍼레이션 이용 )
+
+```python
+arr = [3, 6, 7, 1, 5, 4]
+n = len(arr)
+
+for i in range(1<<n):
+  for j in rnage(n):
+    if i & (1<<j):
+      arr[i]
+  print()
+print()
+```
+
