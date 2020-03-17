@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+nav {
+    padding: 1rem;
+    background-color: gray;
+}
+
+.nav-logo {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-items {
+    float: right;
+    margin: 0;
+}
+
+.nav-item {
+    list-style: none;
+    display: inline;
+}
+
+.cover {
+    height: 500px;
+    background-image: url("images/bicycles.jpg");
+    background-size: cover;
+    text-align: center;
+    /* 한줄 텍스트일때, 수직 가운데 정렬
+    line-height
+    */
+    line-height: 500px;
+}
+
+.cover-title {
+    margin: 0;
+    /* display: table-cell; */
+}
+
+.contents {
+    text-align: center;
+}
+
+.section2-text {
+    text-align: center;
+}
