@@ -64,5 +64,78 @@
 - 속성 (Attribute)
   - `<a href="https://google.com"> Google </a>`
     - 태그(요소:element) 별로 사용할 수 있는 속성은 다르다.
-- 
+
+
+
+
+
+### 인라인 / 블록 요소
+
+
+
+
+
+
+
+### 그룹 컨텐츠
+
+> `<p>`
+>
+> `<hr>`
+>
+> `<ol>, <ul>`
+>
+> `<pre>`
+>
+> `<blockquote>`
+>
+> `<figure>`, `<div>`
+
+
+
+### 텍스트 관련 요소
+
+```html
+<a>
+
+<strong>
+
+<em>
+
+<span> , <br>, <img>
+```
+
+'
+
+table
+
+
+
+
+
+
+
+### form
+
+```html
+<form action="#" method="get">
+    ~~~
+</form>
+```
+
+서버에서 처리될 데이터를 제공하는 역할
+
+
+
+
+
+#### input
+
+```html
+<input type="text" name="" placeholder="" required autofocus>
+```
+
+
+
+
 
