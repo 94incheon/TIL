@@ -108,3 +108,71 @@
 
 
 
+
+
+
+
+
+
+## flex 요약&정리
+
+- `justify-content` : main 축
+
+  - flex-start (기본값)
+  - flex-end
+  - center
+  - space-between
+  - space-around
+
+- `align=items` : cross 축
+
+  - stretch (기본값)
+  - flex-start
+  - flex-end
+  - center
+  - baseline
+
+- `flex-direction` : main 축 정하기
+
+  - row
+  - row-reverse
+  - column
+  - column-reverse
+
+- `order`
+
+  - 기본값 0
+  - 음수 / 양수 가능
+
+- `align-self` : 개별 아이템 지정
+
+  - flex-start
+  - flex-end
+  - center
+  - stretch (기본값)
+
+- `flex-wrap`
+
+  - nowrap (기본값) : 모든 요소 한줄 정렬
+  - wrap : 요소들 여러 줄에 걸쳐 정렬
+  - wrap-reverse
+
+- `flex-flow` >> `flex-direction + flex-wrap`
+
+  - ```css
+    flex-flow: row wrap
+    ```
+
+  - 두개 합친것
+
+- `align-content` : 간격 조절
+
+  - flex-start
+  - flex-end
+  - center
+  - space-between
+  - space-around
+  - stretch
+  - **한줄만 있는 경우 효과가 없다.**
+
+  
