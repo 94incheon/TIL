@@ -380,8 +380,8 @@ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
 
 # gitignore 적용하기
 
-1. `터미널` 의 마스터 최상위 디렉토리로 들어간다.
-2. `vim .gitignore` 를 친후에 i 입력모드로 전환 후에  `.DS_Store` 입력
+1. `터미널` 로 마스터폴더 최상위 디렉토리로 들어간다.
+2. `vim .gitignore` 를 친후에 i 입력모드로 전환 후에  `.DS_Store` 입력 ( Mac 기준 )
 3. `esc` 를 쳐서 입력모드를 벗어난 뒤 `:wq` 저장 후 나가기
 4. gitignore 파일에 .DS_Store 파일은 무시하라고 만들었음
 5. `git rm -r cached .` 를 쳐서 캐시를 다 삭제해주고
@@ -389,3 +389,11 @@ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
 7. `git commit -m "gitignore 적용"` 으로 커밋
 8. `git push origin master `  푸쉬시키기
 9. 그럼 이제 .DS_Store 확장자는 더이상 푸시되지 않는다. ( 맥 기준 )
+
+```shell
+git rm -r --cached .
+git add .
+git commit -m "clear git cache"
+git push origin master
+```
+
