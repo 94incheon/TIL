@@ -44,10 +44,27 @@ $ git commit -m "커밋 메시지"
 
 - Github 원격(remote) 저장소(repository)를 생성하고 `TIL` 폴더와 연결한다.
 - 새로운 원격 저장소가 추가될 때만 입력한다.
+- `깃` 아 `원격저장소`에 `추가` 해줘 `origin` 이라는 이름으로 `주소` 
 
 ```shell
 $ git remote add origin [github 원격 저장소 주소]
 ```
+
+- 삭제는
+
+  - ```bash
+    git remote rm origin
+    ```
+
+- 저장소 이름 변경
+
+  - ```bash
+    git remote rename origin [rename]
+    ```
+
+  - `origin` 을 `[rename]` 이름으로 바꾼다.
+
+
 
 
 
