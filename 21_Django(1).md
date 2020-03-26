@@ -67,7 +67,7 @@ $ pip install django==2.1.15
   - `project` 이름의 폴더가 생김
 
 ```bash
-$ django-admin startproject project
+$ django-admin startproject {project}
 ```
 
 
@@ -75,12 +75,12 @@ $ django-admin startproject project
 - 앱 설정
 
 ```bash
-$ python
+$ python manage.py startapp {앱이름}
 ```
 
 
 
-- 실행
+- 서버 실행
   - 해당 폴더 안에서 이 명령어를 실행시켜야 한다.
   - 서버 종료는 터미널에서 `ctrl + c` 
 
@@ -91,7 +91,9 @@ $ python
 
 
 
+- 파일구조
 
+![image-20200326134107241](img/image-20200326134107241.png)
 
 
 
