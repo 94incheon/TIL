@@ -16,3 +16,9 @@
 
 
 
+
+
+# 맥북에서 터미널 명렁어
+
+brew install jupyter
+
