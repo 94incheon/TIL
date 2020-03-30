@@ -401,7 +401,7 @@ GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
 2. `vim .gitignore` 를 친후에 i 입력모드로 전환 후에  `.DS_Store` 입력 ( Mac 기준 )
 3. `esc` 를 쳐서 입력모드를 벗어난 뒤 `:wq` 저장 후 나가기
 4. gitignore 파일에 .DS_Store 파일은 무시하라고 만들었음
-5. `git rm -r cached .` 를 쳐서 캐시를 다 삭제해주고
+5. `git rm -r --cached .` 를 쳐서 캐시를 다 삭제해주고
 6. `git add .`다시 모두 등록
 7. `git commit -m "gitignore 적용"` 으로 커밋
 8. `git push origin master `  푸쉬시키기
