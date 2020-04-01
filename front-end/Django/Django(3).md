@@ -76,3 +76,12 @@
 
 ![image-20200331141935131](img/image-20200331141935131.png)
 
+
+
+
+
+```python
+article = Article()
+article.full_clean() # 테이블 스키마에 맞게 데이터가 들어가 있는가? 확인/검증
+```
+
