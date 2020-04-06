@@ -59,14 +59,14 @@
 
 
 
-## GET / POST
+## GET / **POST**
 
 - `GET`
 
   - url 길이 제한이 있다. 
   - 정보를 가져오는 것
 
-- `POST`
+- **`POST`**
 
   - DB 값 저장
 
@@ -85,4 +85,69 @@
 랜덤 토큰값으로 체크..
 
 
+
+
+
+## MVC
+
+> - Model Driven Design
+> - d
+
+
+
+`Models -> Urls -> View -> Templates`
+
+
+
+
+
+## HTTP
+
+![image-20200406140503538](img/image-20200406140503538.png)
+
+
+
+## URL | name 변수화
+
+> - Unifrom Resource Locator ( 인터넷 자원의 위치 )
+>
+> - [MDN URL](https://developer.mozilla.org/ko/docs/learn/common_questions/what_is_a_url)
+
+
+
+1. `url` 을 변수화한다.
+   - `urls.py` 
+     - 3번째 인자에 `name='변수명'` 
+
+```django
+<a href="{% url 'index' %}"> 게시글보러가기 </a>
+
+```
+
+
+
+
+
+## Views
+
+> `import get_object_or_404`
+
+
+
+```django
+article = get_object_or_404(Article, pk=pk)
+```
+
+
+
+
+
+## GET / POST / PUT / DELETE
+
+| HTTP        | CRUD   |
+| ----------- | ------ |
+| GET         | Read   |
+| POST        | Create |
+| PUT / PATCH | Update |
+| DELETE      | Delete |
 

@@ -22,3 +22,21 @@
 
 brew install jupyter
 
+
+
+
+
+
+
+## Curl
+
+> - 커맨드에서 요청 보내기
+
+
+
+```bash
+$ curl -i google.com
+```
+
+
+
