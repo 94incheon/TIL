@@ -146,8 +146,8 @@ article = get_object_or_404(Article, pk=pk)
 
 | HTTP        | CRUD   |
 | ----------- | ------ |
-| GET         | Read   |
 | POST        | Create |
+| GET         | Read   |
 | PUT / PATCH | Update |
 | DELETE      | Delete |
 

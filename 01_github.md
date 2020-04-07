@@ -414,3 +414,21 @@ git commit -m "clear git cache"
 git push origin master
 ```
 
+
+
+
+
+## git reflog
+
+
+
+- `git checkout -b [브랜치이름]`  : 만들고 넘어가기
+
+![image-20200407123935964](img/image-20200407123935964.png)
+
+
+
+### git log --oneline
+
+
+
