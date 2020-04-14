@@ -4,8 +4,6 @@
 
 ### 1.Stateless (무상태성)
 
-
-
 ### 2.Connectionless(무연결성)
 
 
@@ -13,6 +11,28 @@
 render 하면 상태를 넘길 수 있지만.
 
 redirect 는 정보를 넘길수없다.
+
+
+
+### 쿠키/세션
+
+- GDPR (유럽연합 일반 데이터 보호규칙) - 쿠키 마음대로 수집하는지 안하는지....
+
+![image-20200414125155644](img/image-20200414125155644.png)
+
+
+
+![image-20200414101443965](img/image-20200414101443965.png)
+
+
+
+
+
+![image-20200414103808017](img/image-20200414103808017.png)
+
+
+
+
 
 
 
@@ -82,4 +102,34 @@ ___
 ## 로그인 ( 기존 User -> DB 에 있는지 검증 )
 
 ### Authentication
+
+
+
+
+
+## Django User
+
+- 상속관계
+
+`User < AbstractUser < AbstractBaseUser < models.Model`
+
+
+
+- Custom 하기
+  - Abstract 클래스를 상속받아 `myUser` 를 생성하기.
+
+
+
+- 커스텀하는 경우
+  - `get_user_model()` 이라는 함수를 사용함
+    - `from django.contrib.auth import get_user_model()`
+  - 기존, 커스텀한것 사용할 지
+
+
+
+
+
+## UserForm
+
+![image-20200414161730700](img/image-20200414161730700.png)
 
