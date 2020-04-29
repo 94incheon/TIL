@@ -292,11 +292,35 @@ group by sex;
 3. `1:N` 관계
    - 학급:학생, 게시글:댓글
 4. `M:N` 다대다 관계
-   - 게시글:좋아요
+   - 게시글:좋아요, 팔로우, 수강신청, 예약
+   - a : title, content(editor), image(편집)
+
+___
+
+- Javascript (Vanilla)
+- Vue.js ( JS Framework )
+- Django Rest Framework ( API Server )
+  - CBV ( Class Based View )
+  - RESTful API
+- MSA ( Micro Service Architecture )
 
 
 
+- Django Monolithic ( 장고만 가지고 만들기 )
+- Django Server & Vue.js Frontend ( React )
 
+
+
+- PaaS (Heroku)
+  - service 코드만 짜라.
+  - 시키는 대로만 해야함
+  - 인원적은.. 서비스 사용자적을때 추천
+  - SysOps (컴퓨터 서버 컴) - 옛날꺼
+  - Dev - 최근
+- IaaS (AWS)
+  - 좀 어려움 서버세팅.. 등등
+  - 우리 마음대로 최적화 가능
+  - DevOps
 
 
 
