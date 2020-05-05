@@ -369,7 +369,7 @@ git commit --amend --no-edit --date "Mon 20 Feb 2020 19:17:19 KST"
 
 - 마지막 커밋날짜를 임의의 날짜로 변경
 
-
+![image-20200505171822732](images/image-20200505171822732.png)
 
 
 
