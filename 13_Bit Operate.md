@@ -39,3 +39,25 @@ for i in range(1<<n):
 print()
 ```
 
+
+
+- 연습
+
+```python
+# 1 << 4   // 1    ===>   1 0 0 0 0
+
+print( 10001 & ( 1 << 4 ) ) # => 10000
+
+print( 2 & ( 1 << 1 ) ) # => 2
+
+
+# 2진법 만들기 코드
+def find(number):
+    bina = ''
+    for i in range(3, -1, -1):
+        bina += '1' if number&(1<<i) else '0'
+    return bina
+
+print(find(4))
+```
+
