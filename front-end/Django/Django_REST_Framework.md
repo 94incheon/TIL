@@ -168,3 +168,126 @@ def article_list_json_3(request):
     return Response(serializer.data)
 ```
 
+
+
+## :three: API CRUD 로직
+
+**urls.py**
+
+```python
+from django.urls import path
+from . import views
+# /api/v1/
+# C: POST /articles/
+# R: GET /articles/
+# R: GET /articles/<id>
+# U: PUT /articles/<id>
+# D: DELETE /articles/<id>
+
+app_name='articles'
+
+urlpatterns =[
+    path('articles/', views.article_list_create),
+    path('articles/<int:article_pk>/', views.article_detail_update_delete),
+]
+```
+
+
+
+**views.py**
+
+```python
+from django.shortcuts import render, get_object_or_404
+from .models import Article
+from rest_framework.response import Response
+from .serializers import ArticleSerializer
+from rest_framework.decorators import api_view
+
+# Create your views here.
+@api_view(['GET', 'POST'])
+def article_list_create(request):
+    # 글 생성
+    if request.method == 'POST':
+        serializer = ArticleSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+    else:
+    # 모든 글을 보여줌
+        articles = Article.objects.all()
+        serializer = ArticleSerializer(articles, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET', 'PUT', 'DELETE']) # 배포때는 GET 없어야함.
+def article_detail_update_delete(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+
+    # 글 상세
+    if request.method == 'GET':
+        serializer = ArticleSerializer(article)
+        return Response(serializer.data)
+
+    # 글을 수정(찾아 바꾼다)
+    elif request.method == 'PUT':
+        serializer = ArticleSerializer(data=request.data, instance=article)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response({'message': '글이 수정되었습니다.', 'data': serializer.data})
+        return Response({'message': '뭔가 잘 못 되었습니다.', 'data': serializer.data})
+
+    # 글을 삭제
+    else:
+        if request.method == 'DELETE':
+            article.delete()
+            return Response({'message': '글이 삭제되었습니다.'})
+```
+
+
+
+
+
+## [:four: API 문서화](https://drf-yasg.readthedocs.io/en/stable/readme.html#quickstart)
+
+> ```shell
+> $ pip install drf-yasg
+> ```
+
+
+
+```python
+# urls.py
+# from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
+# 설정
+schema_view = get_schema_view(
+   openapi.Info(
+      title="Articles API",
+      default_version='v1',
+      description="게시판 API 서버입니다.",
+    #   terms_of_service="https://www.google.com/policies/terms/",
+    #   contact=openapi.Contact(email="contact@snippets.local"),
+    #   license=openapi.License(name="BSD License"),
+   ),
+)
+
+from django.urls import path
+from . import views
+# /api/v1/
+# C: POST /articles/
+# R: GET /articles/
+# R: GET /articles/<id>
+# U: PUT /articles/<id>
+# D: DELETE /articles/<id>
+
+app_name='articles'
+
+urlpatterns =[
+    path('articles/', views.article_list_create),
+    path('articles/<int:article_pk>/', views.article_detail_update_delete),
+    path('swagger/', schema_view.with_ui('swagger')),
+    path('redocs/', schema_view.with_ui('redoc')),
+]
+```
+
