@@ -3,8 +3,9 @@
 > 배포란?
 >
 > - what 무엇을 
->   - 우리는 서버컴퓨터에서 요청과 응답을 처리할 프로그램을 개발한다.
->
+>   
+> - 우리는 서버컴퓨터에서 요청과 응답을 처리할 프로그램을 개발한다.
+>   
 > - when
 >
 >   - while alive
@@ -105,12 +106,16 @@ $ pip install -r requirements.txt
   # 폴더가 중요한게 아니고, 터미널 단위
   
   $ source venv/bin/activate # Mac, Linux
-  $ source venv/Script/activate # Windows
+  $ source venv/Scripts/activate # Windows
   
+  # ~/.bashrc 수정하고 적용시키기
+  alias va="source venv/Scripts/activate"
+  source .bashrc
+
   # 가상환경 종료
   $ deactivate
   ```
-
+  
 - `venv` 폴더를 넘겨주면 안된다.
 
   - 용량이 매우커서
