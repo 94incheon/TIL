@@ -1,7 +1,8 @@
 # JS ( Browswer)
 
-## :one: ES ( 자바 스크립트 코어 문법 )
+## :one: ES ( JS 코어 문법 )
 
+> - 바닐라JS
 > - Callback Function ( 이벤트를 다루기 위해 필수로 알게 됨 )
 >   - function() {}
 >   - () => { }  # 에로우 펑션
@@ -136,5 +137,93 @@
         <!-- Card Here ! -->
   </div>
 </div>
+```
+
+
+
+## :three:  최종 카드 만드는 코드
+
+> - 부트스트랩 CDN 코드는 너무 길어서 가독성을 위해서 임의로 제거했음
+>   - 원래는 CDN 이 들어가 있는 코드임
+>   - [부트스트랩 스타터 코드](https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template) 를 복사하였음.
+> - `태그의 id 속성은 js 가 쓰도록 양보하자.`
+>   - 되도록 class 를 이용할것
+
+```html
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>card</title>
+  </head>
+    
+  <body>
+      
+    <!-- 임의의 Form 을 만들어줘서 사용자 입력데이터를 받아 온다. -->
+    <div class="form-group">
+      <label for="cardTitleInput">Card Title</label>
+      <input id="cardTitleInput" class="form-control" type="text">
+      <label for="">Card Text</label>
+      <input id="cardTextInput" class="form-control" type="text">
+    </div>
+
+    <button id="createCardButton" class="btn btn-primary">CreateCard</button>
+
+    <div class="container mt-3">
+      <div id="cardArea" class="row"> <!-- id는 js에게 양보하자. -->
+        <!-- Card Here ! -->
+      </div>
+    </div>
+
+	<!-- 내가 짠 JS 코드 -->
+    <script>
+      function createCard(title, content) {
+        const card = document.createElement('div')
+        card.classList.add('card', 'col-4')
+
+        const cardImage = document.createElement('img')
+        cardImage.src = 'https://picsum.photos/200'
+        cardImage.classList.add('card-img-top')
+        cardImage.alt = 'random-image'
+
+        const cardBody = document.createElement('div')
+        cardBody.classList.add('card-body')
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.classList.add('card-title')
+        cardTitle.innerText = title
+
+        const cardText = document.createElement('p') // 위에꺼랑 취사 선택
+        cardText.classList.add('card-text')
+        cardText.innerHTML = content
+
+        const cardButtom = document.createElement('a')
+        cardButtom.classList.add('btn', 'btn-primary')
+        cardButtom.href = '#'
+        cardButtom.innerText = 'Go somewhere'
+
+        // appendChild : Node 한개만 추가 가능 (노드만 추가해줌)
+        // append : 여러 개 Node 추가 가능 + Text 도 가능
+        cardBody.append(cardTitle, cardText, cardButtom)
+        card.append(cardImage, cardBody)
+
+        // div#cardArea
+        const cardArea = document.querySelector('#cardArea')
+        cardArea.appendChild(card)
+      }
+
+
+      const createCardButton = document.querySelector('#createCardButton')
+      // 대상, 이벤트, 해야할 일
+      createCardButton.addEventListener('click', function() {
+        const cardTitleInput = document.querySelector('#cardTitleInput')
+        const cardTextInput = document.querySelector('#cardTextInput')
+        createCard(cardTitleInput.value, cardTextInput.value)
+
+        cardTitleInput.value = null
+        cardTextInput.value = null
+      })
+    </script>
+  </body>
+</html>
 ```
 
