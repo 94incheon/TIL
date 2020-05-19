@@ -1,5 +1,11 @@
 # javascript
 
+> - VScode 에서 js 파일 실행시키기
+>   - `pip install node`
+>   - node [파일명]
+
+
+
 - BOM ( browser object model ) **window**
   - DOM ( Documnet object model ) **Document**
 
@@ -379,4 +385,8 @@ class Person:
 unani = Person('unani', 1992)
 */
 ```
+
+
+
+
 

@@ -52,3 +52,23 @@
 </script>    
 ```
 
+
+
+
+
+ **:cupid:ES6 이후 addEventListener**
+
+- `this -> event.target`
+
+```js
+  // 예전코드 (관습)
+  const dogButton = document.querySelector('#dog')
+  dogButton.addEventListener('click', function(event) {
+    this. // dogButton, event.target, 불려진 객체, 수동적
+  })
+
+  // 최근코드 ( ES6 이후 )
+  dogButton.addEventListener('click', (event) => {
+    event.target
+  })
+```
