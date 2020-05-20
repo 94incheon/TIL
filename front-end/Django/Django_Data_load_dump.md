@@ -1,5 +1,5 @@
-- 앱안에 `fixture 폴더` 만들기
-  - 더미데이터( dummy.json )를 `fixture` 안에 넣기
+- 앱안에 `fixtures 폴더` 만들기
+  - 더미데이터( dummy.json )를 `fixtures` 안에 넣기
 
 ```shell
 $ python manage.py loaddata [dummy.json]
