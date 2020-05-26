@@ -54,6 +54,29 @@
 
 - 코드확인
 
+```html
+<div id="app">
+    
+</div>
+
+<script>
+const app = new Vue({
+    el: '#app',
+    data: {},
+    methods: {},
+    computed: {},
+    watch: {},
+    
+    // Life Cycle Hook
+    created: {},
+    mounted: {},
+    ...
+})
+</script>
+```
+
+
+
 
 
 
@@ -85,7 +108,7 @@
     
 
 - 크롬 확장 프로그램
-  - `Vue.js devtools`
+  - [`Vue.js devtools`](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related)
   - 파일 url에 대한 액세스 허용 체크하기 ( 옵션설정 )
 
 
