@@ -177,6 +177,7 @@ export default {
 ## :four: Router 기능
 
 - 설치
+  - [참고문서](https://router.vuejs.org/kr/installation.html)
 
 ```shell
 $ npm i vue-router --save
