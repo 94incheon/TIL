@@ -146,7 +146,21 @@ export default {
 
 
 
+
+
 ## :two: Key 관리 (.env)
+
+> `.env.local` 파일에 작성한 변수명이
+>
+>  서버 최초 실행시에 `process.env.변수명` 으로 자동 설정된다.
+>
+>  단, 변수명의 접두사가 `VUE_APP_` 이어야 한다.
+>
+> `process.env.VUE_APP_YOUTUBE_API_KEY` 로 불러올 수 있음
+
+
+
+
 
 ![image-20200601164234707](images/image-20200601164234707.png)
 
@@ -172,19 +186,65 @@ export default {
 
 
 
+
+
 ## :four: Vue CLI 환경변수 설정
 
 > 숨기고싶은 KEY 등
 >
 > `.env.local` 파일 생성 ( 루트 디렉토리에 )
 
-
-
-
-
 - `.env.local`
 
 ```
 VUE_APP_YOUTUBE_API_KEY='Your Youtube API KEY'
+```
+
+
+
+
+
+
+
+## :five: 과정
+
+![image-20200602094641558](images/image-20200602094641558.png)
+
+![image-20200602121156078](images/image-20200602121156078.png)
+
+![image-20200602125655453](images/image-20200602125655453.png)
+
+
+
+
+
+## :six: 부트스트랩
+
+> public - index.html 에 bootstrap4 CDN 넣었음
+>
+> [Vue CSS](https://vue-loader-v14.vuejs.org/kr/features/scoped-css.html)
+
+
+
+```html
+<style scoped>
+div {
+  border: 3px solid black;
+  padding: 3px;
+  margin: 3px;
+}
+</style>
+```
+
+
+
+
+
+
+
+## :seven: Vue ui
+
+```shell
+$ vue ui
 ```
 
