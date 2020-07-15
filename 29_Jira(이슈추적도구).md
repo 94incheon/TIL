@@ -127,6 +127,20 @@ Project 는 주로 PM이 생성하고, 실무자들은 해당 프로젝트를 �
 
 
 
+## Jira 와 Git 연동하기!
+
+> [스마트 커밋](https://confluence.atlassian.com/fisheye/using-smart-commits-960155400.html)
+>
+> git commit 메시지에 지라 이슈번호를 등록하면 자동으로 추적이 가능해짐..
+
+- ref
+  - [참고문서]([https://velog.io/@pish11010/Jira-Cloud-Smart-commit%EC%9D%84-%EC%9C%84%ED%95%9C-Github-%EC%97%B0%EB%8F%99](https://velog.io/@pish11010/Jira-Cloud-Smart-commit을-위한-Github-연동))
+  - [git과 jira 연동하기](https://gguldh.tistory.com/31)
+
+
+
+
+
 ## Jira 와 Slack 연동하기
 
 [출처 - https://hanminwoo.com/69?category=860219](https://hanminwoo.com/69?category=860219)
