@@ -18,8 +18,8 @@
 그리드 시스템을 사용하기 위해서는 아래의 세 가지 컴포넌트를 알 필요가 있습니다.
 
 - v-container
-- v-layout
-- v-flex
+  - v-layout
+    - v-flex (여러 개 가능)
 
 ```vue
 <template>
@@ -46,9 +46,10 @@
 
 `v-container` 는 중앙 중심의 페이지에 적용됩니다.
 만약 전체 너비를 이용하고자 할 경우 `fluid` 속성(prop)을 전달해 줍니다. 아래와 같이 말이죠.
+pa-0 으로 전체 페이지를 쓸 수도 있음
 
 ```vue
-<v-container fluid>
+<v-container fluid pa-0>
 </v-container>
 ```
 
@@ -110,6 +111,10 @@ UI 를 구성하기 위해 논리적 단위로 화면을 분할해야 합니다.
   </v-content>
 </v-app>
 ```
+
+
+
+![image-20200727232547051](images/image-20200727232547051.png)
 
 
 
