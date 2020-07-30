@@ -6,6 +6,10 @@
 >   - [코마의 훈훈한 공간](https://code-machina.github.io/2019/02/17/Vuetify-Layout-Part-1.html)
 >   - [v-app / v-content / v-container 차이](https://www.reddit.com/r/vuetifyjs/comments/but9mp/difference_between_vapp_vcontent_and_vcontainer/)
 >   - [자주 쓰이는 컴포넌트](http://blog.weirdx.io/post/60376)
+>   - [꽤 정리 잘되있음](https://chansbro.github.io/vue/vuetify_tutorial1)
+>   - [CSS-Tricks 유명한 영문 가이드](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
+
+
 
 
 
