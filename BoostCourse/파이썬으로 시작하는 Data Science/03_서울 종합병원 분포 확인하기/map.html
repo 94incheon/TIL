@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6f9b003ab0a341aa8ed1131d3fe34a8f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6f9b003ab0a341aa8ed1131d3fe34a8f" ></div>
+        
+</body>
+<script>    
+    
+            var map_6f9b003ab0a341aa8ed1131d3fe34a8f = L.map(
+                "map_6f9b003ab0a341aa8ed1131d3fe34a8f",
+                {
+                    center: [37.5236, 126.996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e71bbc09fa094dc2a0af16b0972ec3f0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6f9b003ab0a341aa8ed1131d3fe34a8f);
+        
+    
+            var marker_15c8bf8c76e4427cab807fecfc4eeefd = L.marker(
+                [37.4887418448763, 127.053197983987],
+                {}
+            ).addTo(map_6f9b003ab0a341aa8ed1131d3fe34a8f);
+        
+    
+        var popup_225a5aae479042f1a574e0f178bddd44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57ac41b58b9248dfb933ece3dc8997a9 = $(`<div id="html_57ac41b58b9248dfb933ece3dc8997a9" style="width: 100.0%; height: 100.0%;">타워광명내과의원 : 서울특별시 강남구 언주로30길 39</div>`)[0];
+            popup_225a5aae479042f1a574e0f178bddd44.setContent(html_57ac41b58b9248dfb933ece3dc8997a9);
+        
+
+        marker_15c8bf8c76e4427cab807fecfc4eeefd.bindPopup(popup_225a5aae479042f1a574e0f178bddd44)
+        ;
+
+        
+    
+    
+            var marker_2672b42ac81a456ab4bdc9aed5688bd7 = L.marker(
+                [37.4887418448763, 127.053197983987],
+                {}
+            ).addTo(map_6f9b003ab0a341aa8ed1131d3fe34a8f);
+        
+    
+        var popup_add0ea3b808d4e8a9af7ca719e8e9ba1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11852ba62eea4b588a84c2c33a26848f = $(`<div id="html_11852ba62eea4b588a84c2c33a26848f" style="width: 100.0%; height: 100.0%;">타워광명내과의원 : 서울특별시 강남구 언주로30길 39</div>`)[0];
+            popup_add0ea3b808d4e8a9af7ca719e8e9ba1.setContent(html_11852ba62eea4b588a84c2c33a26848f);
+        
+
+        marker_2672b42ac81a456ab4bdc9aed5688bd7.bindPopup(popup_add0ea3b808d4e8a9af7ca719e8e9ba1)
+        ;
+
+        
+    
+</script>
